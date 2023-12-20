@@ -11,5 +11,6 @@ for see panel admin : http://localhost/resume_site-main/sesume-site/panel/ </br>
 username : admin </br>
 password : admin </br>
 
-
+# Dashboard
+you can see all your information in Dashboard panel
 ![image](https://github.com/hosseinnzr/resume_site/assets/90951634/2515b2c3-b897-4347-a456-24df9fcde786)
