@@ -72,9 +72,10 @@ $stmt->close();
                                             $stmt = $con->prepare("SELECT `id` FROM `users` WHERE `username` = ? AND `password` = ?");
                                             $stmt->bind_param("ss", $username, $password);
                                             $stmt->execute();
-                                            $result = $stmt->get_result();
+                                            $stmt->bind_result($id);
+                                            $stmt->fetch();
 
-                                            if($result->num_rows > 0){
+                                            if($id){
                                                 $_SESSION['userLogin'] = true;
                                                 header("Location: index.php?modules=main");
                                                 //success
